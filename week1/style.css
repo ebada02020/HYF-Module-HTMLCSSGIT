@@ -1,0 +1,119 @@
+
+/*comments
+ 1-general style
+2-header
+3-contact
+4-objective
+5-skills
+6-footer */
+
+/* general style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --main-color: #89cff0;
+}
+.container{
+    width: 90%;
+    margin:auto ;
+}
+a{
+    text-decoration: none;
+}
+li{
+list-style:circle ;
+margin-top: 5px;
+margin-left: 20px;
+}
+h2{
+    background-color: var(--main-color);
+    display: inline-block;
+    padding: 10px;
+    margin: 20px 0px;
+    border-radius: 25%;
+
+}
+/* header */
+header{
+    padding: 7px 0;
+}
+header .header-content{
+    justify-content:space-between ;
+    align-items: center;
+    background-color:var(--main-color);
+    display: grid;
+    grid-template-columns: auto auto;
+    border-radius: 5%;
+}
+
+.header-content img{
+max-width: 180px;
+border-radius: 50%;
+margin: 3px;
+position: relative;
+top: 20px;
+right: 100px;
+}
+.header-content h1, h3{
+margin: 10px;
+position: relative;
+bottom: 30px;
+left: 30px;
+}
+/* contact */
+.list-contact{
+    display: flex;
+    justify-content:space-between ;
+    padding: 20px 0;
+    text-align: left;
+}
+.list-contact i {
+    border-radius: 50%;
+    padding: 10px;
+    background-color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+margin-right: 5px;
+
+}
+.list-contact li{
+    padding: 10px 0px;
+font-size: 17px;
+list-style: none ;
+display: flex;
+align-items: center;
+
+}
+/* objective */
+.resume-objective p{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+font-size: large;
+
+}
+/* skills */
+.list-skills {
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+    margin: 10px;    
+}
+.list-skills li{
+    list-style: none;
+}
+/* footer */
+footer{
+    padding: 30px 0px;
+}
+footer h4{
+text-align: center;
+font-weight: normal;
+color: var(--main-color);}
