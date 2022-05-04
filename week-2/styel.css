@@ -1,0 +1,301 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fakt",sans-serif,Helvetica,Arial;
+}
+.container{
+    width: 90%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    background-color: #0abf53;
+    border-color: #0abf53;
+    border-radius: 5%;
+    width: auto;
+    font-size: 15px;
+    color: white;
+    width:10px 40px;
+    padding: 10px 10px;
+
+}
+button a{
+
+    color: white;
+}
+
+
+.navbar{
+    display: flex;
+flex-wrap: wrap;  
+  align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.adyen-logo img{
+    max-width: 100px;
+}
+.adyen-logo{
+    padding: 0;
+    position: relative;
+    border-top: none;
+    margin: 10px;
+}
+.navbar-list{
+    display: block;
+    position: relative;
+    justify-content: space-between;
+}
+.navbar-list li{
+    padding: 5px 10px;
+    text-align: left;
+
+}
+
+.navbar-login li{
+    text-align: right;
+    padding: 5px 10px;
+    font-size: 20px;
+}
+.platform{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+
+}
+.platform-1{
+    padding: 0px 200px 0px 0px;
+    text-align: left;
+}
+
+.platform-1 h1{
+    font-size: 4vw;
+    margin: 80px 0px 50px 0px;
+}
+.platform-1 p{
+    font-size: 2vw;
+margin-top: 30px;
+}
+.platform-1 button{
+    margin: 80px 0px 50px 0px;
+
+}
+
+
+.platform-2 video{
+    max-width: 500px;
+}
+
+.photos-list{
+display: flex;
+justify-content: space-between;
+margin-top: 50px;
+
+
+}
+.revenue{
+    background-color: #f3f6f9;
+    margin-top: 40px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+}
+.revenue-list-1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.revenue-list-2{
+    display: flex;
+justify-content: space-between;
+margin-top: 30px;
+
+}
+.revenue-list-2-1{
+    margin-right: 10px;
+    padding-right: 20px;
+    font-size: large;
+    
+}
+.revenue-list-2-1 li:first-child{
+    color: #0abf53;
+}
+.revenue-list-2-1 li a{
+    color: #0abf53;
+}
+.revenue-list-2-1 li{
+padding-top: 20px;
+
+}
+.Payments-list{
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.Payments-list-2{
+    display: inline-block;
+    margin-top: 100px;
+}
+
+.Payments-list-2 li{
+    padding: 20px;
+
+}
+
+
+.Payments-list-2 li:first-child{
+    
+color: white;
+background-color: #0abf53;
+display: inline-block;
+
+}
+
+.Payments-list-2 li:nth-child(4){
+    color: #0abf53;
+
+}
+.Payments-list-2 li:nth-child(6){
+    color: #0abf53;
+
+}
+.Payments-list-2 li:nth-child(8){
+    color: #0abf53;
+}
+
+footer{
+    background-color: #00112c;
+}
+.footer-list-1{
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer-list-1-1 a{
+    color: white;
+    padding-top: 20px;
+    display: inline-block;
+}
+.footer-list-2-1{
+    color: white;
+display: flex;
+justify-content: space-between;
+}
+
+
+.footer-list-2 span{
+    width: 100%;
+    display: block;
+    margin: 40px 0px 40px 0px;
+    height: 1px;
+    background: white;
+
+}
+.footer-list-2 li:last-child{
+color: #0abf53;
+
+}
+
+@media screen and (max-width: 1080px){
+
+    .adyen-logo img{
+        max-width: 100px;
+    }
+    .adyen-logo{
+
+        margin: 0px;
+    }
+    .navbar-list li{
+        padding: 2px 5px;    
+    }
+    
+    .navbar-login li{
+        text-align: right;
+        padding: 2px 5px;
+        font-size: 15px;
+    }
+    .platform{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-gap: 5px;
+    
+    }
+    .platform-1{
+        padding: 0px 5px 0px 0px;
+    }
+    
+    .platform-1 h1{
+        font-size: 3vw;
+        margin: 70px 0px 30px 0px;
+    }
+    .platform-1 p{
+        font-size: 2vw;
+    margin-top: 30px;
+    }
+    .platform-1 button{
+        margin: 80px 0px 50px 0px;
+    
+    }
+    
+    
+    .platform-2 video{
+        width: 350px;
+    }
+    
+}
+
+
+@media screen and (max-width: 780px){
+
+    .platform{
+        display: grid;
+        grid-template-columns: auto;
+        grid-gap: 20px;
+    
+    }
+    .photos-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+    .revenue-list-2{
+        display: grid;
+        grid-template-columns: auto auto;    
+    }
+
+    .Payments-list{
+        display: grid;
+        margin-top: 20px;
+        grid-template-columns: auto;
+    }
+   
+    
+    .Payments-list-2 li{
+        padding: 10px;
+    
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
