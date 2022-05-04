@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Fakt",sans-serif,Helvetica,Arial;
+}
+.container{
+    width: 95%;
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+button{
+    background-color: #0abf53;
+    border-color: #0abf53;
+    border-radius: 10%;
+    width: auto;
+    font-size: 15px;
+    color: white;
+    padding: 0px 30px;
+}
+button a{
+
+    color: white;
+}
+
+
+.navbar{
+    display: flex;
+flex-wrap: wrap;  
+  align-items: center;
+    justify-content: space-between;
+}
+.navbar ul li{
+    display: inline-block;
+}
+.adyen-logo img{
+    max-width: 100px;
+    flex: 1;
+}
+.adyen-logo{
+    padding: 0;
+    position: relative;
+    border-top: none;
+    margin: 10px;
+}
+.navbar-list{
+    display: block;
+    position: relative;
+    justify-content: space-between;
+}
+.navbar-list li{
+    padding: 5px 20px;
+    text-align: left;
+
+}
+
+.navbar-login li{
+    text-align: right;
+    padding: 5px 20px;
+    font-size: 20px;
+}
+.platform{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 20px;
+
+}
+.platform-1{
+    padding: 0px 100px 0px 0px;
+}
+
+.platform-1 h1{
+    font-size: 5vw;
+    margin: 80px 0px 50px 0px;
+}
+.platform-1 p{
+    font-size: 2vw;
+margin-top: 30px;
+}
+.platform-1 button{
+    margin: 80px 0px 50px 0px;
+
+}
+
+
+.platform-2 video{
+    max-width: 500px;
+}
+
