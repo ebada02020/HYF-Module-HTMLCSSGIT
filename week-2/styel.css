@@ -18,12 +18,12 @@ li{
 button{
     background-color: #0abf53;
     border-color: #0abf53;
-    border-radius: 5%;
+    border-radius: 6px;
     width: auto;
     font-size: 15px;
     color: white;
     width:10px 40px;
-    padding: 10px 10px;
+    padding: 12px 12px;
 
 }
 button a{
@@ -66,6 +66,9 @@ flex-wrap: wrap;
     padding: 5px 10px;
     font-size: 20px;
 }
+.disply-none{
+    display: none;
+}
 .platform{
     display: grid;
     grid-template-columns: auto auto;
@@ -78,7 +81,9 @@ flex-wrap: wrap;
 }
 
 .platform-1 h1{
-    font-size: 4vw;
+    font-size: 64px;
+    line-height: 74px;
+    font-weight: 600;
     margin: 80px 0px 50px 0px;
 }
 .platform-1 p{
@@ -93,13 +98,16 @@ margin-top: 30px;
 
 .platform-2 video{
     max-width: 500px;
+    max-width: auto;
 }
 
 .photos-list{
 display: flex;
 justify-content: space-between;
 margin-top: 50px;
-
+}
+.photos-list img{
+max-width: auto;
 
 }
 .revenue{
@@ -142,6 +150,9 @@ padding-top: 20px;
     display: flex;
     margin-top: 20px;
     justify-content: space-between;
+}
+.Payments-list-1 video{
+    max-width: 500px;
 }
 .Payments-list-2{
     display: inline-block;
@@ -208,6 +219,11 @@ color: #0abf53;
 }
 
 @media screen and (max-width: 1080px){
+    .container{
+        width: 85%;
+        margin: auto;
+
+    }
 
     .adyen-logo img{
         max-width: 100px;
@@ -225,6 +241,13 @@ color: #0abf53;
         padding: 2px 5px;
         font-size: 15px;
     }
+    .navbar-list,
+    .navbar-login{
+        display: none;
+    }
+    .disply-none{
+        display: block;
+    }
     .platform{
         display: grid;
         grid-template-columns: auto auto;
@@ -236,11 +259,11 @@ color: #0abf53;
     }
     
     .platform-1 h1{
-        font-size: 3vw;
+        font-size: 7vw;
         margin: 70px 0px 30px 0px;
     }
     .platform-1 p{
-        font-size: 2vw;
+        font-size: 3vw;
     margin-top: 30px;
     }
     .platform-1 button{
@@ -249,14 +272,15 @@ color: #0abf53;
     }
     
     
-    .platform-2 video{
+    /* .platform-2 video{
         width: 350px;
-    }
+    } */
     
 }
 
 
 @media screen and (max-width: 780px){
+    
 
     .platform{
         display: grid;
