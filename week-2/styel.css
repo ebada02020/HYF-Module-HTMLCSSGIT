@@ -68,30 +68,22 @@ button a{
     margin: 10px;
 }
 .navbar-list{
-    display: block;
+    display: flex;
     position: relative;
     justify-content: space-between;
     font-weight: 200;
 
 }
-.navbar-list li{
+.navbar-list-1{
     padding: 5px 10px;
     text-align: left;
 
 }
-
-.navbar-list-1::before{
-    content: '';
-    display: none;
-    position: absolute;
-    border-color: #0abf53;
-    border-style: solid;
-    top: 0;
-    left: 0;
-    transition: transform 0.1s;
-
+.navbar div ul li .navbar-list-1-1{
+display: inline-block;
 }
-.navbar-list-1::after{
+
+.navbar div ul li .navbar-list-1-1::after{
     content: '';
     position: absolute;
     border-color: #0abf53;
@@ -102,15 +94,14 @@ button a{
 
 }
 
-.navbar-list-1::after{
+.navbar div ul li .navbar-list-1-1::after{
     border-width: 2px 0px 0px 0px;
     margin-top: -25px;
     width: 100%;
-    height: 91%;
     transform: scale3d(0,1,1);
     transform-origin: top;
 }
-.navbar-list-1:hover::after{
+.navbar div ul li .navbar-list-1-1:hover::after{
     transform: scale3d(1,1,1);
     transition-delay: 0.2s;
 }
@@ -261,9 +252,26 @@ footer{
 }
 .footer-list-1{
     display: flex;
-    justify-content: space-between;
+flex: 5;
+
+
+justify-content: space-between;
+
 
 }
+.footer-list-1-1{
+
+flex: 5;
+flex-wrap: wrap;
+font-weight: 100;
+
+}
+
+.footer-list-1-1 ul li:first-child{
+font-weight: 900;
+}
+
+
 .footer-list-1-1 a{
     color: white;
     padding-top: 20px;
@@ -291,6 +299,48 @@ padding-bottom: 20px;
 color: #0abf53;
 
 }
+
+input[type=email], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #00112c;
+  }
+
+  .footer-5-1 p{
+      color: white;
+      font-size: 12px;
+line-height: 15px;
+
+      font-weight: lighter;
+
+  }
+  .footer-5-1 p span a{
+text-decoration: underline;
+
+  }
+
+
+  .footer-5-2{
+      font-size: 40px;
+      border-color: white;
+      color: white;
+  }
+
+  .footer-5-2 .fa:hover {
+    transform: scale(2);
+    color: white;
+}
+.footer-list-1-1-1{
+
+    flex-grow: 8;
+}
+
+
 
 @media screen and (max-width: 1080px){
     .container{
@@ -390,7 +440,30 @@ flex-wrap: wrap;
         padding: 10px;
     
     }
+
+
     
+
+
+    
+    
+    .footer-list-1{
+        display: grid;
+    grid-template-columns: auto auto;
+    /* grid-template-rows: auto auto auto; */
+    
+    }
+  
+    
+    .footer-list-1-1-1{
+
+        grid-column: 1 / span 2;
+        grid-row: 5-line / 6;
+
+
+    }
+    
+ 
 }
 
 
